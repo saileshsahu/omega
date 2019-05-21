@@ -1,0 +1,23 @@
+@import '../../styles/common.less';
+@import '../../styles/variables.less';
+
+.appname-header {
+    width           : 100vw;
+    height          : 60px;
+    background-color: @primary-color;
+    padding         : 1em 2em;
+
+    .appname-header-logo {
+        height: 100%;
+        float : left;
+    }
+
+    .appname-avatar {
+        float: right;
+        .flex();
+        .flex-justify(flex-end);
+        .flex-align-items(center);
+        .flex-direction(row);
+        height: 100%;
+    }
+}
